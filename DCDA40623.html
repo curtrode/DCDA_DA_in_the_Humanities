@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>DCDA 40623: Data Visualization in the Humanities</title>
+  <style>
+    html {
+      color: #333;
+      background-color: #fff;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 600;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #222;
+    }
+    h1 { font-size: 1.8rem; border-bottom: 2px solid #4a2c82; padding-bottom: 0.3em; }
+    h2 { font-size: 1.4rem; color: #4a2c82; }
+    h3 { font-size: 1.2rem; }
+    .title { font-size: 2rem; text-align: center; border-bottom: none; }
+    header { margin-bottom: 2rem; }
+    p { margin: 0.8em 0; }
+    a { color: #4a2c82; }
+    a:hover { text-decoration: underline; }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1em 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 0.5em 0.75em;
+      text-align: left;
+    }
+    th { background-color: #f5f5f5; font-weight: 600; }
+    tr:nth-child(even) { background-color: #fafafa; }
+    ul, ol { margin: 0.8em 0; padding-left: 1.5em; }
+    li { margin: 0.4em 0; }
+    strong { font-weight: 600; }
+    img { max-width: 100%; }
+    @media (max-width: 600px) {
+      body { padding: 1rem; font-size: 15px; }
+      h1 { font-size: 1.5rem; }
+    }
+    @media print {
+      body { max-width: none; padding: 0; }
+    }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">DCDA 40623: Data Visualization in the Humanities</h1>
+<p style="text-align: center; color: #666;">Spring 2026 Syllabus</p>
+</header>
+<h1 id="course-instructor-information">Course &amp; Instructor
+Information</h1>
+<h2 id="course">Course</h2>
+<p>Data Visualization in the Humanities, DCDA 40623.015:</p>
+<p>Semester and Year Spring 2026:</p>
+<p>Number of Credits 3 credit hours:</p>
+<p>Course Component Type: LEC</p>
+<p>Class Location: SCHAR 2003</p>
+<p>Class Meeting Day(s) &amp; Time(s): 9:30 to 10:50 TR</p>
+<p>Zoom Access Information: available in D2L</p>
+<h2 id="instructor">Instructor</h2>
+<p>Instructor Name: Dr. Curt Rode</p>
+<p>Office Location: Schar 2006</p>
+<p>Office Hours: By appointment
+https://calendly.com/c-rode/appointments</p>
+<p>Preferred Method of Contact: Email</p>
+<p>Email: c.rode@tcu.edu</p>
+<p>Response Time: 48 hours</p>
+<h2 id="final-evaluative-exercise-important-dates">Final Evaluative
+Exercise &amp; Important Dates</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Date</th>
+<th style="text-align: left;">Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">TBD</td>
+<td style="text-align: left;">MLK Day Holiday</td>
+</tr>
+<tr>
+<td style="text-align: left;">TBD</td>
+<td style="text-align: left;">Spring Break begins</td>
+</tr>
+<tr>
+<td style="text-align: left;">TBD</td>
+<td style="text-align: left;">Last day to withdraw from a class</td>
+</tr>
+<tr>
+<td style="text-align: left;">TBD</td>
+<td style="text-align: left;">Last day of classes</td>
+</tr>
+<tr>
+<td style="text-align: left;">TBD</td>
+<td style="text-align: left;">Final Evaluative Exercise: Final
+Presentations</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note for students:</strong> The syllabus is your first course
+reading. It provides an orientation to, overview of the flow, and
+expectations of the course. You should turn to the syllabus for details
+on assignments and course policies.</p>
+<h2
+id="qr-code-for-link-to-page-tcu-syllabus-policies-and-resourcesstudent-resources-policy-information"><img
+src="media/image1.png" style="width:0.72986in;height:0.72986in"
+alt="QR Code for link to page: TCU Syllabus Policies and Resources" />Student
+Resources &amp; Policy Information</h2>
+<p>Click or scan QR code for resources to support you as a TCU student.
+Please note section on <a
+href="https://cte.tcu.edu/tcu-syllabus-policies/#access">Student Access
+and Accommodation</a>, <a
+href="https://cte.tcu.edu/tcu-syllabus-policies/#academicmisconduct">Academic
+Conduct &amp; Course Materials Policies</a>, and <a
+href="https://cte.tcu.edu/tcu-syllabus-policies/#emergency">Emergency
+Response &amp; TCU Alert</a>.</p>
+<h1 id="course-description">Course Description</h1>
+<h2 id="catalog-description">Catalog Description</h2>
+<p>Students will develop the skills to transform humanities research
+questions into data-driven arguments and compelling visualizations.
+Building on prior coursework in coding and statistics, this course
+emphasizes interpretation over implementation: learning to ask better
+questions, make defensible analytical choices, and communicate findings
+to diverse audiences.</p>
+<h2 id="prerequisites-concurrent-enrollment">Prerequisites &amp;
+Concurrent Enrollment</h2>
+<p>DCDA 20833 or WRIT 20833 or COSC 10603 or GEOG 30323; and MATH 10043
+or INSC 20153.</p>
+<h2 id="program-major-connections">Program &amp; Major Connections</h2>
+<p>This course serves as the Data Analytics Elective or a General
+Elective for the DCDA major, and as an Elective for the DCDA minor.</p>
+<h1 id="course-materials">Course Materials</h1>
+<h2 id="required-materials">Required Materials</h2>
+<p>A free GitHub Education (Student Developer) account</p>
+<p>A paid tier subscription to a trusted AI service is strongly
+recommended.</p>
+<h2 id="supplementary-resources">Supplementary Resources</h2>
+<p>To be provided throughout the semester to respond to students’
+immediate needs.</p>
+<h1 id="teaching-philosophy-methodology">Teaching Philosophy &amp;
+Methodology</h1>
+<p>The course is grounded in a conviction that distinguishes humanistic
+data analysis from its counterparts in business or the social sciences:
+that data should be used to test beliefs rather than defend them. This
+epistemological commitment shapes everything from the questions students
+learn to ask (“What would change my mind?”) to the visualizations they
+learn to build (displays that show reasoning, not just conclusions). In
+an era when data visualizations circulate widely and often function as
+instruments of persuasion rather than inquiry, this critical orientation
+is both intellectually necessary and professionally valuable.</p>
+<h1 id="learning-outcomes">Learning Outcomes</h1>
+<h2 id="course-learning-outcomes">Course Learning Outcomes</h2>
+<p>Upon successful completion of this course, students will be able
+to:</p>
+<ol type="1">
+<li><p>Formulate research questions that data can meaningfully address,
+identifying what evidence would be required to test or revise a
+belief.</p></li>
+<li><p>Make and justify decisions about what to count, categorize, or
+exclude, articulating the interpretive consequences of these
+choices.</p></li>
+<li><p>Clean and transform data for analysis, documenting preparation
+decisions and their rationale.</p></li>
+<li><p>Choose appropriate visualization types for different analytical
+purposes, matching form to argument.</p></li>
+<li><p>Construct visual arguments for specific audiences, designing
+displays that invite inquiry rather than foreclose it.</p></li>
+<li><p>Critique data presentations—their own and others’—for rhetorical
+and evidentiary integrity, recognizing when visualizations obscure
+uncertainty or defend conclusions rather than test them.</p></li>
+<li><p>Document and communicate methodological choices, producing
+reflective accounts that make analytical reasoning visible.</p></li>
+</ol>
+<h2 id="program-major-learning-outcomes">Program &amp; Major Learning
+Outcomes</h2>
+<p>These outcomes are particular to the major/minors in Digital Culture
+and Data Analytics (DCDA):</p>
+<ul>
+<li>Students will demonstrate an ability to compose digital arguments.
+[DCO01]</li>
+<li>Students will develop at least basic proficiency with at least one
+coding language. [DAO01]</li>
+</ul>
+<h2 id="tcu-outcomes-core-curriculum-finding-ourselves-in-community">TCU
+Outcomes: Core Curriculum &amp; Finding Ourselves in Community</h2>
+<p>The course will be vetted for core credit after officially
+approved.</p>
+<h1 id="course-requirements">Course Requirements</h1>
+<h2 id="assignments">Assignments</h2>
+<h3 id="formal-writing-research">Formal Writing &amp; Research</h3>
+<p><strong>Cover Memos</strong> Students will write Cover Memos (300-500
+words) for each major project (module), articulating their conceptual
+goals and technical execution.</p>
+<p><strong>Reflections</strong></p>
+<ul>
+<li><p><strong>Baseline Reflection:</strong> Students articulate their
+incoming skills, assumptions, and goals for the course.</p></li>
+<li><p><strong>Midterm Reflection with Proposed Grade:</strong> Students
+assess their learning so far, citing specific evidence from their work,
+and propose a grade with justification.</p></li>
+<li><p><strong>Final Reflection with Proposed Grade:</strong> Students
+make an evidence-based argument for their course grade, drawing on all
+work produced and growth demonstrated.</p></li>
+</ul>
+<h3 id="labs-presentations-critiques">Labs, Presentations &amp;
+Critiques</h3>
+<p><strong>Module 1: Textual Data and Frequency
+Visualization</strong></p>
+<ul>
+<li><p><strong>Lab 1a: Building and Exploring a Text Corpus:</strong>
+Hands-on work acquiring, cleaning, and performing initial exploration of
+textual data.</p></li>
+<li><p><strong>Lab 1b: Visualizing Textual Patterns:</strong> Creating
+frequency-based visualizations and interpreting what they reveal and
+obscure.</p></li>
+<li><p><strong>Module 1 Deliverable: Textual Analysis:</strong> A
+visualization of textual data accompanied by a brief interpretive
+statement addressing choices made and limitations encountered.</p></li>
+</ul>
+<p><strong>Module 2: Tabular Data and Comparative
+Visualization</strong></p>
+<ul>
+<li><p><strong>Lab 2a: Cleaning and Structuring Historical
+Data:</strong> Working with tabular historical records; addressing
+missing data, inconsistent categories, and documentation.</p></li>
+<li><p><strong>Lab 2b: Comparative Visualizations:</strong> Building
+visualizations that compare across time periods or groups; small
+multiples, grouped charts, time series.</p></li>
+<li><p><strong>Module 2 Deliverable: Comparative Analysis:</strong> A
+comparative visualization with written reflection on categorization
+decisions and their interpretive consequences.</p></li>
+</ul>
+<p><strong>Module 3: Spatial Data and Geographic
+Visualization</strong></p>
+<ul>
+<li><p><strong>Lab 3a: From Coordinates to Questions:</strong>
+Geocoding, joining spatial data, and formulating place-based research
+questions.</p></li>
+<li><p><strong>Lab 3b: Geographic Visualization:</strong> Creating maps
+that argue rather than merely display; choropleth, point density, and
+layered approaches.</p></li>
+<li><p><strong>Module 3 Deliverable: Spatial Argument:</strong> A
+map-based visualization with accompanying text explaining how spatial
+representation shapes interpretation.</p></li>
+</ul>
+<p><strong>Module 4: Relational Data and Network
+Visualization</strong></p>
+<ul>
+<li><p><strong>Lab 4a: Building and Querying Networks:</strong>
+Constructing network data from humanities sources; nodes, edges, and
+attributes.</p></li>
+<li><p><strong>Lab 4b: Interactive Visualization:</strong> Building
+visualizations that invite exploration; interactivity as a form of
+argument.</p></li>
+<li><p><strong>Module 4 Deliverable: Relational Analysis:</strong> A
+network or interactive visualization with reflection on what relational
+structure reveals.</p></li>
+</ul>
+<h3 id="final-evaluative-exercise">Final Evaluative Exercise</h3>
+<p><strong>Independent Project</strong></p>
+<ul>
+<li><p><strong>Independent Project Proposal:</strong> A brief document
+identifying the research question, data source(s), intended audience,
+and preliminary approach.</p></li>
+<li><p><strong>Final Project: Functional Component:</strong> A polished
+visualization or interactive piece designed for a specific audience,
+suitable for public presentation or portfolio.</p></li>
+<li><p><strong>Final Project: Reflective Documentation:</strong> A
+methodological narrative documenting choices, dead ends, revisions, and
+what the data can and cannot support.</p></li>
+</ul>
+<h2 id="grading-philosophy-policy">Grading Philosophy &amp; Policy</h2>
+<p>This course utilizes an Ungrading philosophy. This means I will not
+assign letter grades to individual assignments. Instead, we will focus
+on qualitative feedback, self-reflection, and iterative improvement.</p>
+<ul>
+<li><strong>Feedback:</strong> You will receive detailed feedback on
+your code and concepts.</li>
+<li><strong>Self-Evaluation:</strong> You will regularly reflect on your
+own learning and progress through the course of the semester (see
+Self-Reflection above)</li>
+<li><strong>Final Grade:</strong> At the end of the semester, you will
+submit a portfolio and a self-evaluation proposing your final grade
+based on your growth, effort, and the quality of your work. If my
+assessment differs significantly from yours, we will meet to discuss
+it.</li>
+</ul>
+<p><strong>Why Ungrading?</strong> Creative coding requires risk-taking
+and failure. A traditional grading system often punishes failure,
+leading to safe, boring work. Ungrading encourages you to experiment,
+break things, and learn from the process without fear of a low
+grade.</p>
+<h3 id="late-work">Late Work</h3>
+<p>Our schedule is tight, and you have important work to do. In the
+context of our Ungrading policy, I see assignment deadlines as
+milestones to keep you on track for the course’s 4 projects.</p>
+<p>“Failure” to submit your work in a timely fashion will affect our
+ability to provide timely and needed feedback on your work and could
+affect the persuasiveness of the arguments you make for your midterm and
+semester grades.</p>
+<h3 id="participation-engagement-attendance">Participation, Engagement
+&amp; Attendance</h3>
+<p>Coding is a practice, not just a theory. Attendance in studio
+sessions is critical for debugging and peer learning. If you miss class,
+the instructor will not catch you up during class time, as this will
+slow down the progress of other students. If you need assistance making
+up missed work, please make an appointment before the next class period
+meets: https://calendly.com/c-rode/appointments</p>
+<h2 id="course-assignments-final-grade">Course Assignments &amp; Final
+Grade</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Course Components</th>
+<th style="text-align: left;">Learning Outcomes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Labs (8)</td>
+<td style="text-align: left;">CLO 1, 2, 3, 4; DAO01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cover Memos (4)</td>
+<td style="text-align: left;">CLO 2, 7</td>
+</tr>
+<tr>
+<td style="text-align: left;">Self-Reflection Essays (3)</td>
+<td style="text-align: left;">CLO 6, 7</td>
+</tr>
+<tr>
+<td style="text-align: left;">Module Deliverables (4)</td>
+<td style="text-align: left;">CLO 4, 5, 7; DCO01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Independent Project (1)</td>
+<td style="text-align: left;">CLO 1-7; DCO01, DAO01</td>
+</tr>
+</tbody>
+</table>
+<h3 id="grading-scales">Grading Scale(s)</h3>
+<p>For your reference, the faculty definition of grades, and the
+letter/percentage system designed to indicate quality of work in this
+class, is as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Work Quality</th>
+<th style="text-align: left;">Letter Grade</th>
+<th style="text-align: left;">GPA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Excellent</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">4.00</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">A-</td>
+<td style="text-align: left;">3.67</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">B+</td>
+<td style="text-align: left;">3.33</td>
+</tr>
+<tr>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: left;">3.00</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">B-</td>
+<td style="text-align: left;">2.67</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">C+</td>
+<td style="text-align: left;">2.33</td>
+</tr>
+<tr>
+<td style="text-align: left;">Satisfactory</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">2.00</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">C-</td>
+<td style="text-align: left;">1.67</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">D+</td>
+<td style="text-align: left;">1.33</td>
+</tr>
+<tr>
+<td style="text-align: left;">Poor</td>
+<td style="text-align: left;">D</td>
+<td style="text-align: left;">1.00</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">D-</td>
+<td style="text-align: left;">0.67</td>
+</tr>
+<tr>
+<td style="text-align: left;">Failing</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">0.00</td>
+</tr>
+</tbody>
+</table>
+<h2 id="course-policies">Course Policies</h2>
+<h3 id="safe-zone">Safe Zone</h3>
+<p>Our goal is for each student to feel comfortable and able to connect
+with course content and classroom discussion. Please know that we
+welcome, affirm, and celebrate persons in the LGBTQIA communities of
+Texas Christian University. (LGBTQIA stands for Lesbian, Gay, Bisexual,
+Transgender, Queer, Intersex, Asexual, Ally). We will not allow
+homophobic comments in class and will strive to use inclusive language.
+Please visit http://www.allies.tcu.edu/training.asp for more
+information.</p>
+<h3 id="class-norms-recordings">Class Norms &amp; Recordings</h3>
+<p>We consider our classroom a safe space for people to learn, and we
+have an obligation to ensure it remains intact. All members of the class
+are expected to follow rules of common courtesy in person and in all
+email messages, discussions, or any exchanges on a digital platform
+related to this class.</p>
+<p>Our class sessions are not available for public consumption or
+circulation beyond the intended uses for this class. Audio, video, or
+screen recording (including screen shots, snips, grabs, etc.) is
+prohibited and can result in a failing grade for this course and
+suspension of access to University Computing Resources. TCU students are
+prohibited from sharing any portion of course materials (including
+videos, PowerPoint slides, assignments, or notes) with others, including
+on social media, without written permission by the course instructors.
+Be sure to read the full TCU policy.</p>
+<p>Of course, if you have accommodations that allow you to make audio
+recordings, you can. However, please review Student Access and
+Accommodation and contact me immediately if this is the case. You can,
+of course, take good notes. If you cannot attend a class for any reason,
+you’re welcome to contact another classmate to find out what you missed,
+and you can always set up a one-on-one conference with me if you have
+questions about the material.</p>
+<h3 id="technology-policies">Technology Policies</h3>
+<p>Students are expected to bring their charged and fully operational
+laptops to every class. AI tools (Copilot, ChatGPT, Claude, Gemini) are
+permitted as assistants but must be cited. You must be able to explain
+every line of code you submit.</p>
+<h1 id="course-schedule">Course Schedule</h1>
+<p>This calendar represents current course plans. Plans may need to
+change to enhance the learning opportunities and will be communicated
+via D2L.</p>
+<p><em>80-minute sessions, Tuesday/Thursday</em></p>
+<table style="width:97%;">
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 34%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Week</th>
+<th style="text-align: left;">Tuesday</th>
+<th style="text-align: left;">Thursday</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Course Introduction: Data, Evidence, and
+Argument in the Humanities</td>
+<td style="text-align: left;">Workshop: Setting Up Your Environment;
+Baseline Reflection assigned</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Module 1: Textual Data—What Does It Mean
+to Count Words?</td>
+<td style="text-align: left;">Lab 1a: Building and Exploring a Text
+Corpus</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Frequency, Distribution, and the Limits of
+Counting</td>
+<td style="text-align: left;">Lab 1b: Visualizing Textual Patterns;
+Module 1 Deliverable due</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Module 2: Tabular Data—Categories,
+Records, and What Gets Left Out</td>
+<td style="text-align: left;">Lab 2a: Cleaning and Structuring
+Historical Data</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Comparison Across Time and Groups</td>
+<td style="text-align: left;">Lab 2b: Comparative Visualizations; Module
+2 Deliverable due</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">Module 3: Spatial Data—Place as
+Evidence</td>
+<td style="text-align: left;">Lab 3a: From Coordinates to Questions</td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">Mapping Arguments, Not Just Locations</td>
+<td style="text-align: left;">Lab 3b: Geographic Visualization; Module 3
+Deliverable due</td>
+</tr>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">BREAK</td>
+<td style="text-align: left;">BREAK</td>
+</tr>
+<tr>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">Module 4: Relational Data—Networks as
+Interpretation</td>
+<td style="text-align: left;">Lab 4a: Building and Querying
+Networks</td>
+</tr>
+<tr>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">From Pattern to Argument: Synthesizing
+Methods</td>
+<td style="text-align: left;">Lab 4b: Interactive Visualization; Module
+4 Deliverable due; Midterm Reflection due</td>
+</tr>
+<tr>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">Independent Project: Proposals and Data
+Assessment</td>
+<td style="text-align: left;">Workshop: Peer Feedback on Proposals</td>
+</tr>
+<tr>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">Workshop: Data Acquisition and
+Preparation</td>
+<td style="text-align: left;">Workshop: Troubleshooting and
+Consultation</td>
+</tr>
+<tr>
+<td style="text-align: left;">13</td>
+<td style="text-align: left;">Workshop: Exploratory Analysis</td>
+<td style="text-align: left;">Workshop: Identifying Patterns and
+Problems</td>
+</tr>
+<tr>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">Workshop: Building Your Visual
+Argument</td>
+<td style="text-align: left;">Workshop: Iteration and Revision</td>
+</tr>
+<tr>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">Workshop: Documentation and
+Reflection</td>
+<td style="text-align: left;">Workshop: Dress Rehearsal
+Presentations</td>
+</tr>
+<tr>
+<td style="text-align: left;">16</td>
+<td style="text-align: left;">Final Presentations; Final Reflection
+due</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

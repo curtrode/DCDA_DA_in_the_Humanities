@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Word temp files
+~$*
+
+# Editor
+*.swp
+*.swo
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.env
